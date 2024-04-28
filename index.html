@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Cashbox App is the Next Generation Digital Asset, Develop under Cashbox System.">
+	<link rel="shortcut icon" href="web/images/icon.png">
+
+	<title>Cashbox App | Next Generation Digital Asset</title>
+
+	<link rel="stylesheet" href="front/css/vendor.bundle.css">
+	<link rel="stylesheet" href="front/css/style.css">
+	<link rel="stylesheet" href="front/css/theme.css">  
+	
+	<script type="text/javascript">(function() {    var rootScript = 'https://cdn.jsdelivr.net/npm/@flasher/flasher@1.1.1/dist/flasher.min.js';    var FLASHER_FLASH_BAG_PLACE_HOLDER = {};    var options = mergeOptions([], FLASHER_FLASH_BAG_PLACE_HOLDER);    function mergeOptions(first, second) {        return {            context: merge(first.context || {}, second.context || {}),            envelopes: merge(first.envelopes || [], second.envelopes || []),            options: merge(first.options || {}, second.options || {}),            scripts: merge(first.scripts || [], second.scripts || []),            styles: merge(first.styles || [], second.styles || []),        };    }    function merge(first, second) {        if (Array.isArray(first) && Array.isArray(second)) {            return first.concat(second).filter(function(item, index, array) {                return array.indexOf(item) === index;            });        }        return Object.assign({}, first, second);    }    function renderOptions(options) {        if(!window.hasOwnProperty('flasher')) {            console.error('Flasher is not loaded');            return;        }        window.flasher.render(options);    }    function render(options) {        if ('loading' !== document.readyState) {            renderOptions(options);            return;        }        document.addEventListener('DOMContentLoaded', function() {            renderOptions(options);        });    }    document.addEventListener('flasher:render', function (event) {        render(event.detail);    });    if (window.hasOwnProperty('flasher') || !rootScript || document.querySelector('script[src="' + rootScript + '"]')) {        render(options);    } else {        var tag = document.createElement('script');        tag.setAttribute('src', rootScript);        tag.setAttribute('type', 'text/javascript');        tag.onload = function () {            render(options);        };        document.head.appendChild(tag);    }})();</script>
+
+
+<body class="nk-body body-wider theme-dark mode-onepage">
+	<div class="nk-wrap">
+	
+	<header class="nk-header page-header is-transparent is-sticky is-shrink is-dark" id="header">
+            
+		<div class="header-main">
+			<div class="header-container container">
+			<div class="header-wrap">
+				
+					<!-- Logo @s  -->
+				<div class="header-logo logo animated" data-animate="fadeInDown" data-delay=".6">
+					<a href="index.html" class="logo-link"> <img class="logo-dark" src="images/logo.png" > <img class="logo-light" src="images/logo.png" > </a>
+				</div>
+				
+					<!-- Menu Toogle @s  -->
+				<div class="header-nav-toggle">
+					<a href="#" class="navbar-toggle" data-menu-toggle="header-menu"> <div class="toggle-line"> <span></span> </div> </a>
+				</div>
+				
+					<!-- Menu @s  -->
+				<div class="header-navbar animated" data-animate="fadeInDown" data-delay=".75">
+					<nav class="header-menu" id="header-menu">
+						<ul class="menu">
+							<li class="menu-item"><a class="menu-link nav-link" href="#header">Home</a></li>
+							<li class="menu-item"><a class="menu-link nav-link" href="#about">About</a></li>
+							<li class="menu-item"><a class="menu-link nav-link" href="#features">Features</a></li>
+							<li class="menu-item"><a class="menu-link nav-link" href="#contact">Contact</a></li>
+						</ul>
+						
+						<ul class="menu-btns">
+							<li><a href="#" data-bs-toggle="modal" data-bs-target="#login-popup" class="btn btn-md btn-auto btn-grad no-change"><span>Login</span></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			</div>
+		</div>
+		
+	<div class="header-banner bg-theme-grad">
+		<div class="nk-banner">
+			<div class="banner banner-fs banner-single banner-gap-b2">
+				<div style="padding-bottom: 0px;" class="banner-wrap">
+					<div class="container">
+						<div class="row gutter-vr-30px align-items-center justify-content-center">
+							<div class="col-lg-7 col-sm-10 text-center text-lg-start">
+								<div class="banner-caption cpn tc-light mt-3 mt-lg-0">
+									<div class="cpn-head">
+										<h1 class="title animated" data-animate="fadeInUp" data-delay="1.2">Make Money with <br class="d-none d-md-block"> Cashbox App</h1>
+									</div>
+									<div class="cpn-text">
+										<p class="animated" data-animate="fadeInUp" data-delay="1.3">Cashbox App gives you financial freedom, a new generation digital asset. Buy Cashbox Token and Earn unlimited money with best marketing plan.</p>
+									</div>
+									<div class="cpn-action">
+										<ul class="cpn-links animated" data-animate="fadeInUp" data-delay="1.5">
+											<li><a class="link" target="_blank" href="#"><em class="link-icon fas fa-file-alt"></em><span>Business Plan</span></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+							<!-- .col -->
+							<div class="col-lg-5">
+								<div class="token-status round tc-light mb-5 mb-lg-0 no-bd animated" data-animate="fadeInUp" data-delay="1.4">
+									<img src="images/gfx/gfx-s-light.png">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="nk-ovm mask-a-dark shape-a"></div>
+	</div>
+</header>
+
+<main class="nk-pages">
+    <section style="padding-top: 20px;" class="section bg-theme-dark tc-light section-about" id="about">
+        <div class="container">
+            <!-- Block @s  -->
+            <div class="nk-block nk-block-about">
+                <div class="row align-items-center gutter-vr-30px pdb-x">
+                    <div class="col-lg-6">
+                        <div class="nk-block-text">
+                            <h2 class="title animated" data-animate="fadeInUp" data-delay=".1">About Us</h2>
+                            <p class="animated" data-animate="fadeInUp" data-delay=".2">Cashbox is the new generation Earning Token developed with Cashbox System. Vision is to create a community through the whole world to grow the Token rapidly. </p>
+                            <p class="animated" data-animate="fadeInUp" data-delay=".3">The token was launched with the idea of offering real-world value. Too many tokens have been launched without the ability to be used for REAL use cases and for real utility, but Cashbox Token goes against this trend. Cashbox Token can be used to buy and earn unlimited Cashbox Token with a great marketing plan. And the services at launch from Cashbox Network, which has been vetted by the Cashbox team, and Cashbox aims to grow this network rapidly. The static rewards system is a concept that was pioneered by Cashbox App.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="nk-block-video animated" data-animate="fadeInUp" data-delay=".5">
+                            <img src="images/gfx/gfx-u-light.png" >
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .block @e  -->
+            <!-- Section Head @s  -->
+            <div class="section-head">
+                <h2 class="title title-lg animated" data-animate="fadeInUp" data-delay=".6">Key features of Cashbox</h2>
+            </div><!-- .section-head @e  -->
+            <!-- Block @s  -->
+            <div class="nk-block nk-block-features">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="feature animated" data-animate="fadeInUp" data-delay=".7">
+                            <div class="feature-icon dot">
+                                <em class="icon ikon ikon-paricle-alt"></em>
+                            </div>
+                            <div class="feature-text">
+                                <h5 class="title title-sm tc-primary">Secure & Decentralize</h5>
+                                <p>Cashbox Token Easily Transferable and can Store into Decentralize Apps.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature animated" data-animate="fadeInUp" data-delay=".8">
+                            <div class="feature-icon dot">
+                                <em class="icon ikon ikon-donught"></em>
+                            </div>
+                            <div class="feature-text">
+                                <h5 class="title title-sm tc-primary">Business Solution</h5>
+                                <p>This Token can easily use as a gateway of your business payment process. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature animated" data-animate="fadeInUp" data-delay=".9">
+                            <div class="feature-icon dot">
+                                <em class="icon ikon ikon-document"></em>
+                            </div>
+                            <div class="feature-text">
+                                <h5 class="title title-sm tc-primary">Get Personal Benefit</h5>
+                                <p>Cashbox Token buy and sell with next incredable rate.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // -->
+    <section style="background: #000;" class="section section-features tc-light" id="features">
+        <div class="container">
+      
+            <div class="nk-block nk-block-features-s2">
+                <div class="row align-items-center flex-row-reverse">
+                    <div class="col-lg-5">
+                        <div class="gfx py-4 animated" data-animate="fadeInUp" data-delay=".1">
+                            <img src="images/gfx/gfx-z-f.png" alt="gfx">
+                        </div>
+                    </div><!-- .col -->
+                    <div class="col-lg-7">
+                        <!-- Section Head @s  -->
+                        <div class="section-head">
+                            <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">Why Choose Cashbox?</h2>
+                            <p class="animated" data-animate="fadeInUp" data-delay=".3">Cashbox gives opportunity to earn by token sell. </p>
+                        </div>
+
+                        <div class="features-list me-4 mgb-m30">
+                            <div class="feature feature-s2 animated" data-animate="fadeInUp" data-delay=".4">
+                                <div class="feature-icon dot">
+                                    <em class="icon ikon ikon-shiled-alt"></em>
+                                </div>
+                                <div class="feature-text">
+                                    <h5 class="title title-sm tc-primary">Secured Asset</h5>
+                                    <p>Buy Cashbox Token to for stake and sell when rate is high.</p>
+                                </div>
+                            </div>
+                            <div class="feature feature-s2 animated" data-animate="fadeInUp" data-delay=".5">
+                                <div class="feature-icon dot">
+                                    <em class="icon ikon ikon-user"></em>
+                                </div>
+                                <div class="feature-text">
+                                    <h5 class="title title-sm tc-primary">Big Community</h5>
+                                    <p>We develop a Big Community to Increase Token Price and you can gain quickly with this Token.</p>
+                                </div>
+                            </div>
+                            <div class="feature feature-s2 animated" data-animate="fadeInUp" data-delay=".6">
+                                <div class="feature-icon dot">
+                                    <em class="icon ikon ikon-data-server"></em>
+                                </div>
+                                <div class="feature-text">
+                                    <h5 class="title title-sm tc-primary">HFT Insights</h5>
+                                    <p>Cashbox Token is a High-Frequency Trading Industry that's allow you buy-sell and Trade Instantly.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+
+    <section class="bg-theme-dark bg-pattern-dots" id="tokensale">
+        <div class="section section-tokensale tc-light">
+            <div class="container">
+                <!-- Section Head @s  -->
+                <div class="section-head text-center wide-auto">
+                    <h2 class="title animated" data-animate="fadeInUp" data-delay=".1">Cashbox Tokenomics</h2>
+                    <p class="animated" data-animate="fadeInUp" data-delay=".2">Our Token Grow Price with Smart Algorithm.</p>
+                </div>
+
+                <div class="nk-block nk-block-token mgb-m30">
+                    <div class="row">
+                        <div class="col-lg-3"></div>
+                        <div class="col-lg-7">
+                            <div class="token-info bg-theme animated" data-animate="fadeInUp" data-delay=".3">
+                                <h4 class="title title-md mb-2 text-sm-center">Sales Information</h4>
+                                <table class="table table-s1 table-token">
+                                    <tbody>
+                                        <tr>
+                                            <td class="table-head">Liquidity</td>
+                                            <td class="table-des">10%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-head">Binary Pool</td>
+                                            <td class="table-des">18%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-head">Affiliate</td>
+                                            <td class="table-des">7%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-head">Token Fund</td>
+                                            <td class="table-des">55%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-head">Management</td>
+                                            <td class="table-des">10%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-head">Accepted</td>
+                                            <td class="table-des">USDT BEP20</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </section>
+    
+   
+</main>
+    
+	
+	<footer class="nk-footer bg-theme-grad">
+    <section class="section no-pdy overflow-hidden section-contact bg-transparent" id="contact">
+        <div class="container">
+            <!-- Block @s  -->
+            <div class="nk-block block-contact animated" data-animate="fadeInUp" data-delay=".9">
+                <div class="row justify-content-center g-0">
+                    <div class="col-lg-6">
+                        <div class="contact-wrap split split-left split-lg-left bg-white">
+                            <h5 class="title title-md">Contact Us</h5>
+                            <form action="https://www.cashboxapp.io/contactus" method="post"><input type="hidden" name="_token" value="7UjpJgDv5QP8eLd8N1niGidAlDHDgObIDC37itdj">
+							<div class="field-item">
+                                    <input name="name" type="text" class="input-line required">
+                                    <label class="field-label field-label-line">Your Name</label>
+                                </div>
+                                <input type="hidden" name="subject" value="Guest Contact">
+                                <input type="hidden" name="username" value="">
+                                <div class="field-item">
+                                    <input name="email" type="email" class="input-line required email">
+                                    <label class="field-label field-label-line">Your Email</label>
+                                </div>
+                                                                <div class="field-item">
+                                    <textarea name="details" class="input-line input-textarea required"></textarea>
+                                    <label class="field-label field-label-line">Your Message</label>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <button type="submit" class="btn btn-grad">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div style="background-color: #2e5a81 !important;" class="contact-wrap split split-right split-lg-right bg-secondary tc-light">
+                            <div class="d-flex flex-column justify-content-between h-100">
+                                <ul class="contact-list">
+                                    <li>
+                                        <em class="contact-icon fas fa-envelope"></em>
+                                        <div class="contact-text">
+                                            <span>info@cashboxapp.io</span>
+                                        </div>
+                                    </li>
+
+
+                                    <li>
+                                        <em class="contact-icon fas fa-paper-plane"></em>
+                                        <div class="contact-text">
+                                            <a target="_blank" href="#">Join us on Telegram</a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <em class="contact-icon fab fa-discord"></em>
+                                        <div class="contact-text">
+                                            <a target="_blank" href="#">Join us on Discord</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="contact-social">
+                                    <h6>Be a part of our community</h6>
+                                    <ul class="social-links">
+                                        <li><a target="_blank" href="#"><em class="fab fa-twitter"></em></a></li>
+                                        <li><a target="_blank" href="#"><em class="fab fa-medium-m"></em></a></li>
+                                        <li><a target="_blank" href="#"><em class="fab fa-facebook-f"></em></a></li>
+                                        <li><a target="_blank" href="#"><em class="fab fa-linkedin"></em></a></li>
+                                        <li><a href="#"><em class="fab fa-youtube"></em></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .block @e  -->
+        </div>
+        <div class="nk-ovm ovm-top ovm-h-60 bg-theme-dark"></div>
+    </section>
+    <!-- // -->
+
+    <section class="section section-footer tc-light bg-transparent" style="padding-top: 70px;padding-bottom: 20px;"><hr>
+        <div class="container">
+            <!-- Block @s  -->
+            <div class="nk-block block-footer mgb-m30">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-4">
+                        <div class="wgs wgs-menu animated" data-animate="fadeInUp" data-delay=".2">
+                            <h6 class="wgs-title">Company</h6>
+                            <div class="wgs-body">
+                                <ul class="wgs-links">
+                                    <li><a href="#about">About Us</a></li>
+                                    <li><a href="#contact">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- .col -->
+                    <div class="col-lg-2 col-sm-4">
+                        <div class="wgs wgs-menu animated" data-animate="fadeInUp" data-delay=".3">
+                            <h6 class="wgs-title">Legal</h6>
+                            <div class="wgs-body">
+                                <ul class="wgs-links">
+                                    <li><a href="#">Terms &amp; Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8 order-lg-first">
+                        <div class="wgs wgs-text animated" data-animate="fadeInUp" data-delay=".1">
+                            <div class="wgs-body">
+                                <a href="index.html" class="wgs-logo">
+                                    <img style="width: 150px;" src="images/logo.png" >
+                                </a>
+                                <p>Copyright &copy; 2024 Cashbox App. <br>All rights reserved. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="nk-ovm shape-b"></div>
+</footer>        
+    
+	</div>
+ 
+  
+    <div class="modal fade" id="login-popup">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <a href="#" class="modal-close" data-bs-dismiss="modal" aria-label="Close"><em class="ti ti-close"></em></a>
+                <div class="ath-container m-0">
+                    <div class="ath-body">
+                        <h5 style="color: white;" class="ath-heading title">Sign In</h5>
+                        
+                        <!--  
+
+                         -->
+
+                        <form action="memlogin" method="post"><input type="hidden" name="_token" value="7UjpJgDv5QP8eLd8N1niGidAlDHDgObIDC37itdj">                            <div class="field-item">
+                                <div class="field-wrap">
+                                    <input type="text" class="input-bordered" name="username" placeholder="Username" required>
+                                </div>
+                            </div>
+                            <div class="field-item">
+                                <div class="field-wrap">
+                                    <input type="password" class="input-bordered" name="password" placeholder="Password" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <span id="refresh"><img src="captcha/default" ></span>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <input style="height: 40px;border: 2px solid #d3e0f3;border-radius: 5px;max-width: 100%;" id="captcha" name="captcha" type="text"  required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="padding-top: 20px;" class="field-item d-flex justify-content-between align-items-center">
+                                <div class="field-item pb-0">
+                                    <input class="input-checkbox" id="remember-me-100" type="checkbox">
+                                    <label style="color: white;" for="remember-me-100">Remember Me</label>
+                                </div>
+                                <div class="forget-link fz-6">
+                                    <a href="#" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#reset-popup">Forgot password?</a>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-block btn-md">Sign In</button>
+                        </form>
+                        
+                        <!-- <div style="color: white;" class="ath-note text-center"> Don’t have an account? <a href="#" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#register-popup"> <strong>Sign up here</strong></a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="register-popup">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <a href="#" class="modal-close" data-bs-dismiss="modal" aria-label="Close"><em class="ti ti-close"></em></a>
+                <div class="ath-container m-0">
+                    <div class="ath-body">
+                        <h5 style="color: #fff;" class="ath-heading title">Sign Up </h5>
+                        <form method="post" action="https://127.0.0.1/user/register"><input type="hidden" name="_token" value="7UjpJgDv5QP8eLd8N1niGidAlDHDgObIDC37itdj">
+						<div class="field-item">
+							<div class="field-wrap">
+								<input style="color: #fff" type="text" name="name" class="input-bordered" placeholder="Your Name" required>
+							</div>
+						</div>
+
+                            <div class="field-item">
+                                <div class="field-wrap">
+                                    <input style="color: #fff" type="text" name="username" id="username" class="input-bordered" placeholder="Username" required>
+                                    <p style="font-size: 12px;font-style: italic;color: #ff99ea;line-height: 20px;padding-top: 10px;">Username: Only letters and numbers allow! (Don't Include Space or Symbol)</p>
+                                    <span style="font-size: 12px;" id="nuchks"></span>
+                                </div>
+                            </div>
+
+                            <div class="field-item">
+                                <div class="field-wrap">
+                                    <input style="color: #fff" type="text" name="refer" id="refer" class="input-bordered" placeholder="Refer ID" required>
+                                    <span style="font-size: 12px;" id="ref"></span>
+                                </div>
+                            </div>
+
+                            <div class="field-item">
+                                <div class="field-wrap">
+                                    <input style="color: #fff" type="email" id="email" name="email" class="input-bordered" placeholder="Email" required>
+                                    <span style="font-size: 12px;" id="emchk"></span>
+                                </div>
+                            </div>
+
+                            <div class="field-item">
+                                <div class="field-wrap">
+                                    <select style="color: #fff;background: #172d41;" class="input-bordered" name="country" required>
+                                        <option value="">Select Country</option>
+                                                                                <option>Afghanistan +93</option>
+                                                                                <option>Albania +355</option>
+                                                                                <option>Algeria +213</option>
+                                                                                <option>Andorra +376</option>
+                                                                                <option>Angola +244</option>
+                                                                                <option>Anguilla +1 (264)</option>
+                                                                                <option>Antigua and Barbuda +1 (268)</option>
+                                                                                <option>Argentina +54</option>
+                                                                                <option>Armenia +374</option>
+                                                                                <option>Aruba +297</option>
+                                                                                <option>Australia +61</option>
+                                                                                <option>Austria +43</option>
+                                                                                <option>Azerbaijan +994</option>
+                                                                                <option>Bahamas +1 (242)</option>
+                                                                                <option>Bahrain +973</option>
+                                                                                <option>Bangladesh +880</option>
+                                                                                <option>Barbados +1 (246)</option>
+                                                                                <option>Belarus +375</option>
+                                                                                <option>Belgium +32</option>
+                                                                                <option>Belize +501</option>
+                                                                                <option>Benin +229</option>
+                                                                                <option>Bermuda +1 (441)</option>
+                                                                                <option>Bhutan +975</option>
+                                                                                <option>Bolivia +591</option>
+                                                                                <option>Bosnia and Herzegovina +387</option>
+                                                                                <option>Botswana +267</option>
+                                                                                <option>Bouvet Island </option>
+                                                                                <option>Brazil +55</option>
+                                                                                <option>British Indian Ocean Territory +1 (284)</option>
+                                                                                <option>Brunei Darussalam +673</option>
+                                                                                <option>Bulgaria +359</option>
+                                                                                <option>Burkina Faso +226	</option>
+                                                                                <option>Burundi +257</option>
+                                                                                <option>Cambodia +855</option>
+                                                                                <option>Cameroon +237</option>
+                                                                                <option>Canada +1</option>
+                                                                                <option>Cape Verde +238</option>
+                                                                                <option>Cayman Islands +1 (345)</option>
+                                                                                <option>Central African Republic +236</option>
+                                                                                <option>Chad +235</option>
+                                                                                <option>Chile +56</option>
+                                                                                <option>China +86</option>
+                                                                                <option>Christmas Island </option>
+                                                                                <option>Cocos (Keeling) Islands </option>
+                                                                                <option>Colombia +57</option>
+                                                                                <option>Comoros +269</option>
+                                                                                <option>Democratic Republic of the Congo +243</option>
+                                                                                <option>Cook Islands +682</option>
+                                                                                <option>Costa Rica +506</option>
+                                                                                <option>Croatia (Hrvatska) +385</option>
+                                                                                <option>Cuba +53</option>
+                                                                                <option>Cyprus +357</option>
+                                                                                <option>Czech Republic +420</option>
+                                                                                <option>Denmark +45</option>
+                                                                                <option>Djibouti +253</option>
+                                                                                <option>Dominica +1 (767)</option>
+                                                                                <option>Dominican Republic +1 (809)</option>
+                                                                                <option>Ecuador +593</option>
+                                                                                <option>Egypt +20</option>
+                                                                                <option>El Salvador +503</option>
+                                                                                <option>Equatorial Guinea +240</option>
+                                                                                <option>Eritrea +291</option>
+                                                                                <option>Estonia +372</option>
+                                                                                <option>Ethiopia +251</option>
+                                                                                <option>Falkland Islands (Malvinas) +500</option>
+                                                                                <option>Faroe Islands +298</option>
+                                                                                <option>Fiji +679</option>
+                                                                                <option>Finland +358</option>
+                                                                                <option>France +33</option>
+                                                                                <option>French Polynesia +594</option>
+                                                                                <option>French Southern Territories </option>
+                                                                                <option>Gabon +241</option>
+                                                                                <option>Gambia +220</option>
+                                                                                <option>Georgia +995</option>
+                                                                                <option>Germany +49</option>
+                                                                                <option>Ghana +233</option>
+                                                                                <option>Gibraltar +350</option>
+                                                                                <option>Greece +30</option>
+                                                                                <option>Greenland +299</option>
+                                                                                <option>Grenada +1 (473)</option>
+                                                                                <option>Guam +590</option>
+                                                                                <option>Guatemala +502</option>
+                                                                                <option>Guinea +224</option>
+                                                                                <option>Guinea-Bissau +245</option>
+                                                                                <option>Guyana +592</option>
+                                                                                <option>Haiti +509</option>
+                                                                                <option>Heard and Mc Donald Islands </option>
+                                                                                <option>Honduras +504</option>
+                                                                                <option>Hong Kong +852</option>
+                                                                                <option>Hungary +36</option>
+                                                                                <option>Iceland +354</option>
+                                                                                <option>India +91</option>
+                                                                                <option>Isle of Man +44</option>
+                                                                                <option>Indonesia +62</option>
+                                                                                <option>Iran +98</option>
+                                                                                <option>Iraq +964</option>
+                                                                                <option>Ireland +353</option>
+                                                                                <option>Israel +972</option>
+                                                                                <option>Italy +39</option>
+                                                                                <option>Ivory Coast +225</option>
+                                                                                <option>Jersey +44</option>
+                                                                                <option>Jamaica +1 (876)</option>
+                                                                                <option>Japan +81</option>
+                                                                                <option>Jordan +962</option>
+                                                                                <option>Kazakhstan +7</option>
+                                                                                <option>Kenya +254</option>
+                                                                                <option>Kiribati +686</option>
+                                                                                <option>Korea (North) +850</option>
+                                                                                <option>Korea (South) +82</option>
+                                                                                <option>Kosovo </option>
+                                                                                <option>Kuwait +965</option>
+                                                                                <option>Kyrgyzstan +996</option>
+                                                                                <option>Laos +856</option>
+                                                                                <option>Latvia +371</option>
+                                                                                <option>Lebanon +961</option>
+                                                                                <option>Lesotho +266</option>
+                                                                                <option>Liberia +231</option>
+                                                                                <option>Libyan +218</option>
+                                                                                <option>Liechtenstein +423</option>
+                                                                                <option>Lithuania +370</option>
+                                                                                <option>Luxembourg +352</option>
+                                                                                <option>Macau +853</option>
+                                                                                <option>Macedonia +389</option>
+                                                                                <option>Madagascar +261</option>
+                                                                                <option>Malawi +265</option>
+                                                                                <option>Malaysia +60</option>
+                                                                                <option>Maldives +960</option>
+                                                                                <option>Mali +223</option>
+                                                                                <option>Malta +356</option>
+                                                                                <option>Marshall Islands +692</option>
+                                                                                <option>Martinique +596</option>
+                                                                                <option>Mauritania +222</option>
+                                                                                <option>Mauritius +230</option>
+                                                                                <option>Mayotte </option>
+                                                                                <option>Mexico </option>
+                                                                                <option>Micronesia +691</option>
+                                                                                <option>Moldova +373</option>
+                                                                                <option>Monaco +377</option>
+                                                                                <option>Mongolia +976</option>
+                                                                                <option>Montenegro +382</option>
+                                                                                <option>Montserrat +1 (664)</option>
+                                                                                <option>Morocco +52</option>
+                                                                                <option>Mozambique +258</option>
+                                                                                <option>Myanmar +95</option>
+                                                                                <option>Namibia +264</option>
+                                                                                <option>Nauru +674</option>
+                                                                                <option>Nepal +977</option>
+                                                                                <option>Netherlands +31</option>
+                                                                                <option>New Zealand +64</option>
+                                                                                <option>Nicaragua +505</option>
+                                                                                <option>Niger +227</option>
+                                                                                <option>Nigeria +234</option>
+                                                                                <option>Niue </option>
+                                                                                <option>Norfolk Island </option>
+                                                                                <option>Northern Mariana Islands +1 (670)</option>
+                                                                                <option>Norway +47</option>
+                                                                                <option>Oman +968</option>
+                                                                                <option>Pakistan +92</option>
+                                                                                <option>Palau +680</option>
+                                                                                <option>Palestine +970</option>
+                                                                                <option>Panama +507</option>
+                                                                                <option>Papua New Guinea +675</option>
+                                                                                <option>Paraguay +595</option>
+                                                                                <option>Peru +51</option>
+                                                                                <option>Philippines +63</option>
+                                                                                <option>Pitcairn </option>
+                                                                                <option>Poland +48</option>
+                                                                                <option>Portugal +351</option>
+                                                                                <option>Puerto Rico </option>
+                                                                                <option>Qatar +974</option>
+                                                                                <option>Romania +40</option>
+                                                                                <option>Russia +7</option>
+                                                                                <option>Rwanda +250</option>
+                                                                                <option>Saint Kitts and Nevis </option>
+                                                                                <option>Saint Vincent and the Grenadines </option>
+                                                                                <option>Samoa +685</option>
+                                                                                <option>San Marino +378</option>
+                                                                                <option>Sao Tome and Principe +239</option>
+                                                                                <option>Saudi Arabia +966</option>
+                                                                                <option>Senegal +221</option>
+                                                                                <option>Serbia +381</option>
+                                                                                <option>Seychelles +248</option>
+                                                                                <option>Sierra Leone +232</option>
+                                                                                <option>Singapore +65</option>
+                                                                                <option>Slovakia +421</option>
+                                                                                <option>Slovenia +386</option>
+                                                                                <option>Solomon Islands +677</option>
+                                                                                <option>Somalia </option>
+                                                                                <option>South Africa +27</option>
+                                                                                <option>South Georgia </option>
+                                                                                <option>South Sudan +211</option>
+                                                                                <option>Spain +34</option>
+                                                                                <option>Sri Lanka +94</option>
+                                                                                <option>St. Pierre and Miquelon +508</option>
+                                                                                <option>Sudan +249</option>
+                                                                                <option>Suriname +597</option>
+                                                                                <option>Svalbard and Jan Mayen Islands </option>
+                                                                                <option>Swaziland +268</option>
+                                                                                <option>Sweden +46</option>
+                                                                                <option>Switzerland +41</option>
+                                                                                <option>Syria +963</option>
+                                                                                <option>Taiwan +886</option>
+                                                                                <option>Tajikistan +992</option>
+                                                                                <option>Tanzania +255</option>
+                                                                                <option>Thailand +66</option>
+                                                                                <option>Togo +228</option>
+                                                                                <option>Tokelau +690</option>
+                                                                                <option>Tonga +676</option>
+                                                                                <option>Trinidad and Tobago +1 (868)</option>
+                                                                                <option>Tunisia +216</option>
+                                                                                <option>Turkey +90</option>
+                                                                                <option>Turkmenistan +993</option>
+                                                                                <option>Turks and Caicos Islands +1 (649)</option>
+                                                                                <option>Tuvalu +688</option>
+                                                                                <option>Uganda +256</option>
+                                                                                <option>Ukraine +380</option>
+                                                                                <option>United Arab Emirates +971</option>
+                                                                                <option>United Kingdom +44</option>
+                                                                                <option>United States +1</option>
+                                                                                <option>United States minor outlying islands </option>
+                                                                                <option>Uruguay +598</option>
+                                                                                <option>Uzbekistan +998</option>
+                                                                                <option>Vanuatu +678</option>
+                                                                                <option>Vatican City State </option>
+                                                                                <option>Venezuela +58</option>
+                                                                                <option>Vietnam +84</option>
+                                                                                <option>Virgin Islands (British) </option>
+                                                                                <option>Virgin Islands (U.S.) </option>
+                                                                                <option>Wallis and Futuna Islands </option>
+                                                                                <option>Western Sahara </option>
+                                                                                <option>Yemen +967</option>
+                                                                                <option>Zambia +260</option>
+                                                                                <option>Zimbabwe +263</option>
+                                                                            </select>
+                                </div>
+                            </div>
+
+                            <div class="field-item">
+                                <div class="field-wrap">
+                                    <input style="color: #fff" type="number" name="mobile" class="input-bordered" placeholder="Mobile" required>
+                                </div>
+                            </div>
+
+                            <div class="field-item">
+                                <div class="field-wrap">
+                                    <input style="color: #fff" type="password" id="password" name="password" class="input-bordered" placeholder="Password" required>
+                                </div>
+                            </div>
+
+                            <div class="field-item">
+                                <div class="field-wrap">
+                                    <input style="color: #fff" type="password" id="confirm-password" name="confirm-password" class="input-bordered" placeholder="Repeat Password" required>
+                                    <span style="font-size: 12px;" id="mass"></span>
+                                </div>
+                            </div>
+                            <div class="field-item">
+                                <input class="input-checkbox" id="agree-term-200" type="checkbox">
+                                <label style="color: #fff" for="agree-term-200">I agree with the <a href="#">Privacy Policy</a> &amp; <a href="#">Terms</a>.</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block btn-md">Sign Up</button>
+                        </form>
+                        
+                        <div style="color: #fff" class="ath-note text-center"> Already have an account? <a href="#" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#login-popup"> <strong>Sign in here</strong></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="modal fade" id="reset-popup">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <a href="#" class="modal-close" data-bs-dismiss="modal" aria-label="Close"><em class="ti ti-close"></em></a>
+                <div class="ath-container m-0">
+                    <div class="ath-body">
+                        <h5 style="color:white;" class="ath-heading title">Reset Password</h5>
+                        <form action="https://127.0.0.1/passreset" method="post"><input type="hidden" name="_token" value="7UjpJgDv5QP8eLd8N1niGidAlDHDgObIDC37itdj">                            <div class="field-item">
+                                <div class="field-wrap">
+                                    <input type="text" class="input-bordered" name="username" placeholder="Your Username" required>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-block btn-md">Confirm Now</button>
+                            <div style="color:white;" class="ath-note text-center"> Remembered? <a href="#" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#login-popup"> <strong>Sign in here</strong></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="preloader preloader-alt no-split"><span class="spinner spinner-alt"><img class="spinner-brand" src="web/images/icon.png" alt=""></span></div>
+
+    <script src="front/js/jquery.bundle.js"></script>
+	<script src="front/js/scripts.js"></script>
+	<script src="front/js/charts.js"></script>
+
+	<script type="text/javascript">
+		window.onload = function () {
+			OpenBootstrapPopup();
+		};
+		function OpenBootstrapPopup() {
+			$("#notification").modal('show');
+		}
+
+		$('#notification').delay(2000).fadeOut();
+	</script>
+
+
+
+    <script>
+      $(document).ready(function () {
+        
+        $('#username').blur(function(){
+          var nuchks ='';
+          var username = $('#username').val();
+          var _token = $('input[name="_token"]').val();
+          $.ajax({
+            url:"check/user",
+            method: "POST",
+            data:{username:username, _token:_token},
+            success:function(result){
+              if (result=='not_unique') {
+                $('#nuchks').html('Username Exist! Try Another.').css('color', '#E11D64');
+                $('#username').addClass('has_error');
+                $('#register').attr('disabled', 'disabled');
+              }else {
+                $('#nuchks').html('').css('color', '#fff');
+                $('#username').addClass('has_error');
+                $('#register').attr('disabled', 'disabled');  
+              }
+            }
+          });
+        });
+      });
+
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        
+        $('#refer').blur(function(){
+          var ref ='';
+          var refer = $('#refer').val();
+          var _token = $('input[name="_token"]').val();
+          $.ajax({
+            url:"check/refer",
+            method: "POST",
+            data:{refer:refer, _token:_token},
+            success:function(result){
+              if (result=='unique') {
+                $('#ref').html('Invalid Refer ID!').css('color', '#E11D64');
+                $('#refer').addClass('has_error');
+                $('#register').attr('disabled', 'disabled');
+              }else {
+                $('#ref').html('').css('color', '#fff');
+                $('#refer').addClass('has_error');
+                $('#register').attr('disabled', 'disabled');  
+              }
+            }
+          });
+        });
+      });
+
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        
+        $('#email').blur(function(){
+          var emchk ='';
+          var email = $('#email').val();
+          var _token = $('input[name="_token"]').val();
+          $.ajax({
+            url:"check/email",
+            method: "POST",
+            data:{email:email, _token:_token},
+            success:function(result){
+              if (result=='not_unique') {
+                $('#emchk').html('Email Exist! Try New Email.').css('color', '#E11D64');
+                $('#email').addClass('has_error');
+                $('#register').attr('disabled', 'disabled');
+              }else {
+                $('#emchk').html('').css('color', '#fff');
+                $('#email').addClass('has_error');
+                $('#register').attr('disabled', 'disabled');  
+              }
+            }
+          });
+        });
+      });
+
+    </script>
+
+	<script>
+		$('#password, #confirm-password').on('keyup', function () 
+		{
+			if ($('#password').val() == "")
+			{
+				$('#mass').html(' ').css('color', '#ff4242');
+			} else {
+				if ($('#password').val() == $('#confirm-password').val()) 
+				{
+					$('#mass').html(' ').css('color', 'rgb(0 22 255)');
+				} else {
+					$('#mass').html('Confirm Password Not Matched').css('color', '#ff4242');
+			}
+		}
+		});
+	</script>
+
+</body>
+</html>
