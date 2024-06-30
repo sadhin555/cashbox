@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<head>
+		<title>Cashbox App</title>
+		<meta name="csrf-token" content="jNvnTDZ3OBtOwFpsTkcDsnnvvCzRkXU9zCiCJAOF" />
+		<meta charset="utf-8" />
+		<meta name="description" content="Cashbox App is the Next Generation Digital Asset, Develop under Cashbox System." />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link rel="shortcut icon" href="../images/icon.png" />
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+		<link href="../panel/plugins/custom/vis-timeline/vis-timeline.dark.bundle.css" rel="stylesheet" type="text/css" />
+
+		<link href="../panel/plugins/global/plugins.dark.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../panel/css/style.dark.bundle.css" rel="stylesheet" type="text/css" />
+
+		<link href="../panel/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+		<link href="../panel/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+		<link href="../panel/plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+		<script type="text/javascript">
+			(function() {
+			    var rootScript = 'https://cdn.jsdelivr.net/npm/@flasher/flasher@1.1.1/dist/flasher.min.js';
+			 	var FLASHER_FLASH_BAG_PLACE_HOLDER = {};
+			 	var options = mergeOptions([], FLASHER_FLASH_BAG_PLACE_HOLDER);
+			 	function mergeOptions(first, second) {
+			 		return {
+			 			context: merge(first.context || {}, second.context || {}),
+			 			envelopes: merge(first.envelopes || [], second.envelopes || []),
+			 			options: merge(first.options || {}, second.options || {}),
+			 			scripts: merge(first.scripts || [], second.scripts || []),
+			 			styles: merge(first.styles || [], second.styles || []),
+			 			};
+			 		}
+			 	function merge(first, second) {
+			 		if (Array.isArray(first) && Array.isArray(second)) {
+			 			return first.concat(second).filter(function(item, index, array) {
+			 				return array.indexOf(item) === index;
+			 				});
+			 			}
+			 			return Object.assign({}, first, second);
+			 				}
+			 			function renderOptions(options) {
+			 				if(!window.hasOwnProperty('flasher')) {
+			 					console.error('Flasher is not loaded');
+			 					return;
+			 					}
+			 				window.flasher.render(options);
+			 				}
+			 			function render(options) {
+			 				if ('loading' !== document.readyState) {
+			 					renderOptions(options);
+			 					return;
+			 					}
+			 				document.addEventListener('DOMContentLoaded', function() {
+			 					renderOptions(options);
+			 					});
+			 				}
+			 			document.addEventListener('flasher:render', function (event) {
+			 				render(event.detail);
+			 				});
+			 			if (window.hasOwnProperty('flasher') || !rootScript || document.querySelector('script[src="' + rootScript + '"]')) {
+			 				render(options);
+			 			} else {
+			 				var tag = document.createElement('script');
+			 				tag.setAttribute('src', rootScript);
+			 				tag.setAttribute('type', 'text/javascript');
+			 				tag.onload = function () {
+			 					render(options);
+			 					};
+			 				document.head.appendChild(tag);
+			 				}
+			 		})();
+		</script>
+
+	
+	<body id="kt_app_body" data-kt-app-layout="light-sidebar" data-kt-app-sidebar-fixed="true" data-kt-app-sidebar-push-header="true" data-kt-app-sidebar-push-toolbar="true" data-kt-app-sidebar-push-footer="true" class="dark-mode app-default">
+		<div class="d-flex flex-column flex-root" id="kt_app_root">
+			<div class="app-page flex-column flex-column-fluid" id="kt_app_page">
+				<div id="kt_app_header" class="app-header">
+	<div class="app-container container-fluid d-flex align-items-stretch justify-content-between">
+		<div class="d-flex align-items-center d-lg-none ms-n2 me-2" title="Show sidebar menu">
+			<div class="btn btn-icon btn-active-color-primary w-35px h-35px" id="kt_app_sidebar_mobile_toggle">
+				<span class="svg-icon svg-icon-1">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+						<path d="M21 7H3C2.4 7 2 6.6 2 6V4C2 3.4 2.4 3 3 3H21C21.6 3 22 3.4 22 4V6C22 6.6 21.6 7 21 7Z" fill="currentColor" />
+						<path opacity="0.3" d="M21 14H3C2.4 14 2 13.6 2 13V11C2 10.4 2.4 10 3 10H21C21.6 10 22 10.4 22 11V13C22 13.6 21.6 14 21 14ZM22 20V18C22 17.4 21.6 17 21 17H3C2.4 17 2 17.4 2 18V20C2 20.6 2.4 21 3 21H21C21.6 21 22 20.6 22 20Z" fill="currentColor" />
+					</svg>
+				</span>
+			</div>
+		</div>
+		
+		<div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
+			<a href="../dashboard.html" class="d-lg-none">
+				<img src="../images/logo.png" class="h-30px" />
+			</a>
+		</div>
+	
+		<div class="d-flex align-items-stretch justify-content-between flex-lg-grow-1" id="kt_app_header_wrapper">
+
+			<div data-kt-swapper="true" data-kt-swapper-mode="{default: 'prepend', lg: 'prepend'}" data-kt-swapper-parent="{default: '#kt_app_content_container', lg: '#kt_app_header_wrapper'}" class="page-title d-flex flex-column justify-content-center flex-wrap me-3 mb-5 mb-lg-0">
+			
+				<h1 class="page-heading d-flex text-dark fw-bolder fs-3 flex-column justify-content-center my-0">Added USDT 
+				<span class="page-desc text-gray-400 fs-7 fw-bold pt-1">USDT Summary </span>
+				</h1>
+			</div>
+	
+			
+
+		</div>
+	</div>
+</div>				<div class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
+					<div style="background-image: url(../images/nav-back.png);" id="kt_app_sidebar" class="app-sidebar flex-column" data-kt-drawer="true" data-kt-drawer-name="app-sidebar" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="235px" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_app_sidebar_mobile_toggle">
+
+	<div class="app-sidebar-logo d-none d-lg-flex flex-stack flex-shrink-0 px-8" id="kt_app_sidebar_logo">
+		<a href="../dashboard.html">
+			<img alt="Logo" src="../images/logo.png" style="height: 35px !important;" />
+		</a>
+	</div>
+	
+	<div class="app-sidebar-menu app-sidebar-menu-arrow hover-scroll-overlay-y my-5 my-lg-5 px-3" id="kt_app_sidebar_menu_wrapper" data-kt-scroll="true" data-kt-scroll-height="auto" data-kt-scroll-dependencies="#kt_app_sidebar_toolbar, #kt_app_sidebar_footer" data-kt-scroll-offset="0">
+
+		<div class="menu menu-column menu-sub-indention menu-active-bg fw-bold" id="#kt_sidebar_menu" data-kt-menu="true">
+			<div class="menu-item">
+				<a class="menu-link" href="../dashboard.html">
+					<span class="menu-icon">
+						<span class="svg-icon svg-icon-5">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+								<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+							</svg>
+						</span>
+					</span>
+					<span class="menu-title">Dashboard</span>
+				</a>
+			</div>
+
+			<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+				<span class="menu-link">
+					<span class="menu-icon">
+						<span class="svg-icon svg-icon-5">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+								<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+							</svg>
+						</span>
+					</span>
+					<span class="menu-title">Trade</span>
+					<span class="menu-arrow"></span>
+				</span>
+				<div class="menu-sub menu-sub-accordion">
+					<div class="menu-item">
+						<a class="menu-link" href="../trade/buytoken.html">
+							<span class="menu-bullet">
+								<span class="bullet bullet-dot"></span>
+							</span>
+							<span class="menu-title">Buy Token</span>
+						</a>
+					</div>
+					<div class="menu-item">
+						<a class="menu-link" href="../trade/buystatus.html">
+							<span class="menu-bullet">
+								<span class="bullet bullet-dot"></span>
+							</span>
+							<span class="menu-title">Buy Status</span>
+						</a>
+					</div>
+					<div class="menu-item">
+						<a class="menu-link" href="../trade/selltoken.html">
+							<span class="menu-bullet">
+								<span class="bullet bullet-dot"></span>
+							</span>
+							<span class="menu-title">Sell Token</span>
+						</a>
+					</div>
+					<div class="menu-item">
+						<a class="menu-link" href="../trade/sellstatus.html">
+							<span class="menu-bullet">
+								<span class="bullet bullet-dot"></span>
+							</span>
+							<span class="menu-title">Sell Status</span>
+						</a>
+					</div>
+					
+				</div>
+			</div>
+
+			
+			<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+				<span class="menu-link">
+					<span class="menu-icon">
+						<span class="svg-icon svg-icon-5">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+								<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+							</svg>
+						</span>
+					</span>
+					<span class="menu-title">Network</span>
+					<span class="menu-arrow"></span>
+				</span>
+				<div class="menu-sub menu-sub-accordion">
+					<div class="menu-item">
+						<a class="menu-link" href="../network/reflink.html">
+							<span class="menu-bullet">
+								<span class="bullet bullet-dot"></span>
+							</span>
+							<span class="menu-title">Refer Link</span>
+						</a>
+					</div>
+					<div class="menu-item">
+						<a class="menu-link" href="../network/affiliates.html">
+							<span class="menu-bullet">
+								<span class="bullet bullet-dot"></span>
+							</span>
+							<span class="menu-title">Affiliates</span>
+						</a>
+					</div>
+					<div class="menu-item">
+						<a class="menu-link" href="../network/network.html">
+							<span class="menu-bullet">
+								<span class="bullet bullet-dot"></span>
+							</span>
+							<span class="menu-title">Team View</span>
+						</a>
+					</div>
+					
+				</div>
+			</div>
+
+			<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+				<span class="menu-link">
+					<span class="menu-icon">
+						<span class="svg-icon svg-icon-5">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+								<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+							</svg>
+						</span>
+					</span>
+					<span class="menu-title">Payment</span>
+					<span class="menu-arrow"></span>
+				</span>
+				<div class="menu-sub menu-sub-accordion">
+					<div class="menu-item">
+						<a class="menu-link" href="../payment/addmoney.html">
+							<span class="menu-bullet">
+								<span class="bullet bullet-dot"></span>
+							</span>
+							<span class="menu-title">Add Fund</span>
+						</a>
+					</div>
+
+					<div class="menu-item">
+						<a class="menu-link" href="../payment/transfer.html">
+							<span class="menu-bullet">
+								<span class="bullet bullet-dot"></span>
+							</span>
+							<span class="menu-title">Transfer</span>
+						</a>
+					</div>
+
+					<div class="menu-item">
+						<a class="menu-link" href="../payment/withdraw.html">
+							<span class="menu-bullet">
+								<span class="bullet bullet-dot"></span>
+							</span>
+							<span class="menu-title">Withdraw</span>
+						</a>
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="menu-item">
+				<a class="menu-link" href="../promotion/rank.html">
+					<span class="menu-icon">
+						<span class="svg-icon svg-icon-5">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+								<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+							</svg>
+						</span>
+					</span>
+					<span class="menu-title">Promotion</span>
+				</a>
+			</div>
+
+			<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+				<span class="menu-link">
+					<span class="menu-icon">
+						<span class="svg-icon svg-icon-5">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+								<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+							</svg>
+						</span>
+					</span>
+					<span class="menu-title">Reports</span>
+					<span class="menu-arrow"></span>
+				</span>
+				<div class="menu-sub menu-sub-accordion">
+					<div class="menu-item">
+						<a class="menu-link" href="../reports/balrepo.html">
+							<span class="menu-bullet">
+								<span class="bullet bullet-dot"></span>
+							</span>
+							<span class="menu-title">Balance Report</span>
+						</a>
+					</div>
+
+					<div class="menu-item">
+						<a class="menu-link" href="../reports/genrepo.html">
+							<span class="menu-bullet">
+								<span class="bullet bullet-dot"></span>
+							</span>
+							<span class="menu-title">Affiliate Earning</span>
+						</a>
+					</div>
+
+					<div class="menu-item">
+						<a class="menu-link" href="../reports/binrepo.html">
+							<span class="menu-bullet">
+								<span class="bullet bullet-dot"></span>
+							</span>
+							<span class="menu-title">Matching Earning</span>
+						</a>
+					</div>
+
+					<div class="menu-item">
+						<a class="menu-link" href="../reports/rnkrepo.html">
+							<span class="menu-bullet">
+								<span class="bullet bullet-dot"></span>
+							</span>
+							<span class="menu-title">Rank Reward</span>
+						</a>
+					</div>
+
+
+				<!-- 
+					<div class="menu-item">
+						<a class="menu-link" href="../reports/refrepo.html">
+							<span class="menu-bullet">
+								<span class="bullet bullet-dot"></span>
+							</span>
+							<span class="menu-title">Refer Earning</span>
+						</a>
+					</div> 
+				-->
+
+
+					<div class="menu-item">
+						<a class="menu-link" href="../reports/eautorepo.html">
+							<span class="menu-bullet">
+								<span class="bullet bullet-dot"></span>
+							</span>
+							<span class="menu-title">Earning Auto Sell</span>
+						</a>
+					</div>
+
+					<div class="menu-item">
+						<a class="menu-link" href="../reports/tautorepo.html">
+							<span class="menu-bullet">
+								<span class="bullet bullet-dot"></span>
+							</span>
+							<span class="menu-title">Token Auto Sell</span>
+						</a>
+					</div>
+
+					<div class="menu-item">
+						<a class="menu-link" href="../reports/wdrorepo.html">
+							<span class="menu-bullet">
+								<span class="bullet bullet-dot"></span>
+							</span>
+							<span class="menu-title">Withdraw Report</span>
+						</a>
+					</div>
+
+					<div class="menu-item">
+						<a class="menu-link" href="../reports/pchart.html">
+							<span class="menu-bullet">
+								<span class="bullet bullet-dot"></span>
+							</span>
+							<span class="menu-title">Token Price Chart</span>
+						</a>
+					</div>
+
+					
+										
+				</div>
+			</div>
+
+			<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+				<span class="menu-link">
+					<span class="menu-icon">
+						<span class="svg-icon svg-icon-5">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+								<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+							</svg>
+						</span>
+					</span>
+					<span class="menu-title">Settings</span>
+					<span class="menu-arrow"></span>
+				</span>
+				<div class="menu-sub menu-sub-accordion">
+					<div class="menu-item">
+						<a class="menu-link" href="../settings/settings.html">
+							<span class="menu-bullet">
+								<span class="bullet bullet-dot"></span>
+							</span>
+							<span class="menu-title">Profile Update</span>
+						</a>
+					</div>
+					<div class="menu-item">
+						<a class="menu-link" href="../settings/security.html">
+							<span class="menu-bullet">
+								<span class="bullet bullet-dot"></span>
+							</span>
+							<span class="menu-title">Security Update</span>
+						</a>
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="menu-item">
+				<a class="menu-link" href="../support/support.html">
+					<span class="menu-icon">
+						<span class="svg-icon svg-icon-5">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+								<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+							</svg>
+						</span>
+					</span>
+					<span class="menu-title">Support</span>
+				</a>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="app-sidebar-user d-flex flex-stack py-5 px-8">
+		<div class="d-flex me-5">
+			<div class="me-5">
+				<div class="symbol symbol-40px cursor-pointer">
+					<img src="../panel/media/avatars/300-1.png"/>
+				</div>
+				
+			</div>
+			<div class="me-2">
+				<a href="#" class="app-sidebar-username text-gray-800 text-hover-primary fs-6 fw-bold lh-0">username</a>
+				<span class="app-sidebar-deckription text-gray-400 fw-bold d-block fs-8">Logout</span>
+			</div>
+		</div>
+		<a href=".../frontend-cashboxapp-view/index.html" class="btn btn-icon btn-active-color-primary btn-icon-custom-color me-n4" data-bs-toggle="tooltip" title="End session and singout">
+			<span class="svg-icon svg-icon-2 svg-icon-gray-400">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+					<rect opacity="0.3" width="12" height="2" rx="1" transform="matrix(-1 0 0 1 15.5 11)" fill="currentColor" />
+					<path d="M13.6313 11.6927L11.8756 10.2297C11.4054 9.83785 11.3732 9.12683 11.806 8.69401C12.1957 8.3043 12.8216 8.28591 13.2336 8.65206L16.1592 11.2526C16.6067 11.6504 16.6067 12.3496 16.1592 12.7474L13.2336 15.3479C12.8216 15.7141 12.1957 15.6957 11.806 15.306C11.3732 14.8732 11.4054 14.1621 11.8756 13.7703L13.6313 12.3073C13.8232 12.1474 13.8232 11.8526 13.6313 11.6927Z" fill="currentColor" />
+					<path d="M8 5V6C8 6.55228 8.44772 7 9 7C9.55228 7 10 6.55228 10 6C10 5.44772 10.4477 5 11 5H18C18.5523 5 19 5.44772 19 6V18C19 18.5523 18.5523 19 18 19H11C10.4477 19 10 18.5523 10 18C10 17.4477 9.55228 17 9 17C8.44772 17 8 17.4477 8 18V19C8 20.1046 8.89543 21 10 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3H10C8.89543 3 8 3.89543 8 5Z" fill="#C4C4C4" />
+				</svg>
+			</span>
+		</a>
+	</div>
+</div>
+
+<div class="app-main flex-column flex-row-fluid" id="kt_app_main">
+						
+<style type="text/css">
+	.tooltip {
+		font-size: 13px;
+		text-align: left !important;
+	    padding-top: 5px !important;
+	    width: 100% !important;
+	    z-index: 1;
+	}
+
+	.tooltip_title {
+	    color: #feb019;
+	    padding-left: 5px;
+	}
+
+	.tooltip_text {
+	    color: #58fcf8;
+	    padding-right: 5px;
+	}
+</style>
+
+<div class="d-flex flex-column flex-column-fluid">
+	<div id="kt_app_content" class="app-content flex-column-fluid">
+		<div id="kt_app_content_container" class="app-container container-xxl">
+			<div class="card mb-5 mb-xl-10" style="background: transparent;border: 1px solid #323248;">
+				<div id="kt_account_settings_profile_details" class="collapse show">
+	      
+				<center> 
+						         
+              	<img style="width:80px;height: auto;padding-bottom: 10px;padding-top: 20px;" src="../web/images/6.png">
+              
+              	<p style="color: #fff;text-align:center;font-size:15px;">
+					Method: <a style="color: #ffff00">USDT</a><br>
+					Network: <a style="color: red"> BEP-20 </a><br>  
+					Amount: <a style="color:#00ffe9;font-weight: bold;">"$buyamount"</a> 
+              	</p>
+
+		<!--               
+			<div style="margin-bottom:10px;">
+				<center> 
+					<div style="background: #fff !important;padding: 5px;height: auto;width: 140px;"><div style="font-size:0;position:relative;width:124.7px;height:116px;">
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:0px;top:0px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:4.3px;top:0px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:8.6px;top:0px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:12.9px;top:0px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:17.2px;top:0px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:21.5px;top:0px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:25.8px;top:0px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:38.7px;top:0px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:51.6px;top:0px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:55.9px;top:0px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:68.8px;top:0px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:73.1px;top:0px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:77.4px;top:0px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:86px;top:0px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:94.6px;top:0px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:98.9px;top:0px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:103.2px;top:0px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:107.5px;top:0px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:111.8px;top:0px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:116.1px;top:0px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:120.4px;top:0px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:0px;top:4px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:25.8px;top:4px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:43px;top:4px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:47.3px;top:4px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:51.6px;top:4px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:81.7px;top:4px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:86px;top:4px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:94.6px;top:4px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:120.4px;top:4px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:0px;top:8px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:8.6px;top:8px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:12.9px;top:8px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:17.2px;top:8px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:25.8px;top:8px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:34.4px;top:8px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:38.7px;top:8px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:43px;top:8px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:51.6px;top:8px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:68.8px;top:8px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:77.4px;top:8px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:81.7px;top:8px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:86px;top:8px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:94.6px;top:8px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:103.2px;top:8px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:107.5px;top:8px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:111.8px;top:8px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:120.4px;top:8px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:0px;top:12px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:8.6px;top:12px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:12.9px;top:12px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:17.2px;top:12px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:25.8px;top:12px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:38.7px;top:12px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:43px;top:12px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:47.3px;top:12px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:55.9px;top:12px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:64.5px;top:12px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:86px;top:12px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:94.6px;top:12px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:103.2px;top:12px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:107.5px;top:12px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:111.8px;top:12px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:120.4px;top:12px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:0px;top:16px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:8.6px;top:16px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:12.9px;top:16px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:17.2px;top:16px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:25.8px;top:16px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:43px;top:16px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:60.2px;top:16px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:64.5px;top:16px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:68.8px;top:16px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:77.4px;top:16px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:81.7px;top:16px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:86px;top:16px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:94.6px;top:16px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:103.2px;top:16px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:107.5px;top:16px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:111.8px;top:16px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:120.4px;top:16px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:0px;top:20px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:25.8px;top:20px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:38.7px;top:20px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:55.9px;top:20px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:68.8px;top:20px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:73.1px;top:20px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:86px;top:20px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:94.6px;top:20px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:120.4px;top:20px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:0px;top:24px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:4.3px;top:24px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:8.6px;top:24px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:12.9px;top:24px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:17.2px;top:24px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:21.5px;top:24px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:25.8px;top:24px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:34.4px;top:24px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:43px;top:24px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:51.6px;top:24px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:60.2px;top:24px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:68.8px;top:24px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:77.4px;top:24px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:86px;top:24px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:94.6px;top:24px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:98.9px;top:24px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:103.2px;top:24px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:107.5px;top:24px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:111.8px;top:24px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:116.1px;top:24px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:120.4px;top:24px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:34.4px;top:28px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:38.7px;top:28px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:43px;top:28px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:51.6px;top:28px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:55.9px;top:28px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:64.5px;top:28px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:77.4px;top:28px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:81.7px;top:28px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:0px;top:32px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:4.3px;top:32px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:8.6px;top:32px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:17.2px;top:32px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:21.5px;top:32px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:25.8px;top:32px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:30.1px;top:32px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:34.4px;top:32px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:43px;top:32px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:47.3px;top:32px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:60.2px;top:32px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:68.8px;top:32px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:77.4px;top:32px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:90.3px;top:32px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:94.6px;top:32px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:111.8px;top:32px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:0px;top:36px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:8.6px;top:36px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:30.1px;top:36px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:43px;top:36px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:47.3px;top:36px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:77.4px;top:36px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:81.7px;top:36px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:98.9px;top:36px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:107.5px;top:36px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:120.4px;top:36px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:4.3px;top:40px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:17.2px;top:40px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:21.5px;top:40px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:25.8px;top:40px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:34.4px;top:40px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:38.7px;top:40px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:55.9px;top:40px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:73.1px;top:40px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:77.4px;top:40px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:86px;top:40px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:103.2px;top:40px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:116.1px;top:40px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:120.4px;top:40px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:0px;top:44px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:4.3px;top:44px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:12.9px;top:44px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:21.5px;top:44px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:34.4px;top:44px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:47.3px;top:44px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:64.5px;top:44px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:73.1px;top:44px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:77.4px;top:44px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:90.3px;top:44px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:94.6px;top:44px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:98.9px;top:44px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:107.5px;top:44px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:111.8px;top:44px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:116.1px;top:44px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:0px;top:48px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:25.8px;top:48px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:51.6px;top:48px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:77.4px;top:48px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:94.6px;top:48px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:98.9px;top:48px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:103.2px;top:48px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:120.4px;top:48px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:0px;top:52px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:8.6px;top:52px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:12.9px;top:52px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:30.1px;top:52px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:47.3px;top:52px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:51.6px;top:52px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:55.9px;top:52px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:77.4px;top:52px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:81.7px;top:52px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:90.3px;top:52px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:98.9px;top:52px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:116.1px;top:52px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:120.4px;top:52px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:4.3px;top:56px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:8.6px;top:56px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:12.9px;top:56px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:17.2px;top:56px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:25.8px;top:56px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:30.1px;top:56px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:34.4px;top:56px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:38.7px;top:56px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:43px;top:56px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:47.3px;top:56px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:51.6px;top:56px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:60.2px;top:56px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:68.8px;top:56px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:77.4px;top:56px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:90.3px;top:56px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:94.6px;top:56px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:103.2px;top:56px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:107.5px;top:56px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:111.8px;top:56px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:120.4px;top:56px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:0px;top:60px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:4.3px;top:60px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:8.6px;top:60px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:17.2px;top:60px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:30.1px;top:60px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:43px;top:60px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:51.6px;top:60px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:55.9px;top:60px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:60.2px;top:60px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:90.3px;top:60px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:98.9px;top:60px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:107.5px;top:60px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:116.1px;top:60px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:0px;top:64px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:25.8px;top:64px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:34.4px;top:64px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:38.7px;top:64px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:47.3px;top:64px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:60.2px;top:64px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:68.8px;top:64px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:77.4px;top:64px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:81.7px;top:64px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:94.6px;top:64px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:103.2px;top:64px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:107.5px;top:64px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:111.8px;top:64px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:4.3px;top:68px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:8.6px;top:68px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:12.9px;top:68px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:34.4px;top:68px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:38.7px;top:68px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:47.3px;top:68px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:60.2px;top:68px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:64.5px;top:68px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:73.1px;top:68px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:90.3px;top:68px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:120.4px;top:68px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:0px;top:72px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:12.9px;top:72px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:17.2px;top:72px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:25.8px;top:72px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:43px;top:72px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:55.9px;top:72px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:68.8px;top:72px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:77.4px;top:72px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:86px;top:72px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:90.3px;top:72px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:94.6px;top:72px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:103.2px;top:72px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:116.1px;top:72px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:120.4px;top:72px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:4.3px;top:76px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:8.6px;top:76px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:17.2px;top:76px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:30.1px;top:76px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:34.4px;top:76px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:43px;top:76px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:47.3px;top:76px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:73.1px;top:76px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:77.4px;top:76px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:81.7px;top:76px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:98.9px;top:76px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:107.5px;top:76px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:111.8px;top:76px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:116.1px;top:76px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:0px;top:80px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:8.6px;top:80px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:25.8px;top:80px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:30.1px;top:80px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:34.4px;top:80px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:38.7px;top:80px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:43px;top:80px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:51.6px;top:80px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:64.5px;top:80px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:68.8px;top:80px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:86px;top:80px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:90.3px;top:80px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:94.6px;top:80px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:98.9px;top:80px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:103.2px;top:80px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:111.8px;top:80px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:120.4px;top:80px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:34.4px;top:84px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:38.7px;top:84px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:47.3px;top:84px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:51.6px;top:84px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:55.9px;top:84px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:81.7px;top:84px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:86px;top:84px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:103.2px;top:84px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:107.5px;top:84px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:120.4px;top:84px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:0px;top:88px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:4.3px;top:88px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:8.6px;top:88px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:12.9px;top:88px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:17.2px;top:88px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:21.5px;top:88px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:25.8px;top:88px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:34.4px;top:88px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:47.3px;top:88px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:51.6px;top:88px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:60.2px;top:88px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:73.1px;top:88px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:81.7px;top:88px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:86px;top:88px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:94.6px;top:88px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:103.2px;top:88px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:111.8px;top:88px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:120.4px;top:88px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:0px;top:92px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:25.8px;top:92px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:34.4px;top:92px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:43px;top:92px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:51.6px;top:92px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:55.9px;top:92px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:60.2px;top:92px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:68.8px;top:92px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:73.1px;top:92px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:81.7px;top:92px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:86px;top:92px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:103.2px;top:92px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:107.5px;top:92px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:116.1px;top:92px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:120.4px;top:92px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:0px;top:96px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:8.6px;top:96px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:12.9px;top:96px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:17.2px;top:96px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:25.8px;top:96px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:34.4px;top:96px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:38.7px;top:96px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:43px;top:96px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:47.3px;top:96px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:60.2px;top:96px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:68.8px;top:96px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:73.1px;top:96px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:77.4px;top:96px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:81.7px;top:96px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:86px;top:96px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:90.3px;top:96px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:94.6px;top:96px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:98.9px;top:96px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:103.2px;top:96px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:111.8px;top:96px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:120.4px;top:96px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:0px;top:100px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:8.6px;top:100px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:12.9px;top:100px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:17.2px;top:100px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:25.8px;top:100px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:38.7px;top:100px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:47.3px;top:100px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:60.2px;top:100px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:81.7px;top:100px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:86px;top:100px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:94.6px;top:100px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:98.9px;top:100px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:111.8px;top:100px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:116.1px;top:100px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:0px;top:104px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:8.6px;top:104px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:12.9px;top:104px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:17.2px;top:104px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:25.8px;top:104px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:34.4px;top:104px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:38.7px;top:104px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:55.9px;top:104px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:73.1px;top:104px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:77.4px;top:104px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:81.7px;top:104px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:86px;top:104px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:111.8px;top:104px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:120.4px;top:104px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:0px;top:108px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:25.8px;top:108px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:34.4px;top:108px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:47.3px;top:108px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:68.8px;top:108px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:73.1px;top:108px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:111.8px;top:108px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:116.1px;top:108px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:0px;top:112px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:4.3px;top:112px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:8.6px;top:112px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:12.9px;top:112px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:17.2px;top:112px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:21.5px;top:112px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:25.8px;top:112px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:34.4px;top:112px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:38.7px;top:112px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:43px;top:112px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:51.6px;top:112px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:68.8px;top:112px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:77.4px;top:112px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:81.7px;top:112px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:86px;top:112px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:90.3px;top:112px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:94.6px;top:112px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:103.2px;top:112px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:116.1px;top:112px;">&nbsp;</div>
+					<div style="background-color:black;width:4.3px;height:4px;position:absolute;left:120.4px;top:112px;">&nbsp;</div>
+					</div>
+					</div> 
+				</center>                                           
+			</div>
+		-->
+
+			<div style="margin-bottom:10px;">
+				<center>
+					<img src="../web/images/account.png" class="h-150px" />
+				</center>
+			</div>
+			<p> 
+             	<a id="p1" style="text-align:center;color: #ffffdc;font-size:14px;word-wrap: break-word;">0x201dba94691382ba6ff8c558fa6df4429cadd874</a> <button id='btn' style="cursor:pointer; background: transparent;border: 0px;" onclick="copyToClipboard('#p1')"><i style="color: #c5ffc6;" class="fa fa-copy"></i></button>
+             	<tooltip id='tooltip' style='display:none;background: #26a17b;padding: 1px 5px;width: 65px;'> Copied! </tooltip>
+             </p>
+
+              <p style="color: #ffa4a4;padding-bottom: 20px;font-size: 15px;">If you Already Completed Transaction <a class="flipX" style="color: #e2e2ff;" href="../dashboard.html">Go Back >></a> </p>        
+          </center>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<style type="text/css">
+	    .flipX {
+	  animation: 1s anim-flipX ease infinite;
+	}
+	@keyframes  anim-flipX {
+	  0% {
+	    opacity: 0;
+	    transform: rotateX(90def);
+	  }
+	  50% {
+	    opacity: 1;
+	    transform: rotateX(720deg);
+	  }
+	  100% {
+	    /* animate nothing to pause animation at the end */
+	    opacity: 1;
+	    transform: rotateX(720deg);
+	  }
+	}
+	</style>
+
+	<script type="text/javascript">
+	    function copyToClipboard(element) {
+	      var $temp = $("<input>");
+	      $("body").append($temp);
+	      $temp.val($(element).text()).select();
+	      document.execCommand("copy");
+	      $temp.remove();
+	    }
+
+	    const btn = document.getElementById('btn'),
+	      tooltip = document.getElementById('tooltip');
+
+		btn.addEventListener('click', () => {
+		  if (tooltip.style.display === "none") {
+		      tooltip.style.display = "inline";
+		  }
+		  else{
+		    tooltip.style.display  = "none";
+		  }
+		})
+	</script>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<script src="../panel/plugins/global/plugins.bundle.js"></script>
+	<script src="../panel/js/scripts.bundle.js"></script>
+
+	<script src="../panel/plugins/custom/vis-timeline/vis-timeline.bundle.js"></script>
+
+	<script src="../panel/js/widgets.bundle.js"></script>
+	<script src="../panel/js/custom/widgets.js"></script>
+	<script src="../panel/js/custom/apps/chat/chat.js"></script>
+	<script src="../panel/js/custom/intro.js"></script>
+	<script src="../panel/js/custom/utilities/modals/upgrade-plan.js"></script>
+	<script src="../panel/js/custom/utilities/modals/create-project/type.js"></script>
+	<script src="../panel/js/custom/utilities/modals/create-project/budget.js"></script>
+	<script src="../panel/js/custom/utilities/modals/create-project/settings.js"></script>
+	<script src="../panel/js/custom/utilities/modals/create-project/team.js"></script>
+	<script src="../panel/js/custom/utilities/modals/create-project/targets.js"></script>
+	<script src="../panel/js/custom/utilities/modals/create-project/files.js"></script>
+	<script src="../panel/js/custom/utilities/modals/create-project/complete.js"></script>
+	<script src="../panel/js/custom/utilities/modals/create-project/main.js"></script>
+	<script src="../panel/js/custom/utilities/modals/create-app.js"></script>
+	<script src="../panel/js/custom/utilities/modals/create-campaign.js"></script>
+	<script src="../panel/js/custom/utilities/modals/users-search.js"></script>
+	<script src="../panel/js/custom/account/referrals/referral-program.js"></script>
+
+	<script src="../panel/plugins/datatables/jquery.dataTables.min.js"></script>
+	<script src="../panel/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+	<script src="../panel/plugins/custom-table-datatable.js"></script>
+
+<script type="text/javascript">
+    function copylLink(element) {
+      var $tempy = $("<input>");
+      $("body").append($tempy);
+      $tempy.val($(element).text()).select();
+      document.execCommand("copy");
+      $tempy.remove();
+
+        $("#lcheck").show().delay(3000).queue(function(n) {
+           $(this).hide(); n();
+        });
+
+        $("#lclick").hide().delay(3000).queue(function(n) {
+           $(this).show(); n();
+        });
+    }
+</script>
+
+<script type="text/javascript">
+    function copyrLink(element) {
+      var $tempy = $("<input>");
+      $("body").append($tempy);
+      $tempy.val($(element).text()).select();
+      document.execCommand("copy");
+      $tempy.remove();
+
+        $("#rcheck").show().delay(3000).queue(function(n) {
+           $(this).hide(); n();
+        });
+
+        $("#rclick").hide().delay(3000).queue(function(n) {
+           $(this).show(); n();
+        });
+    }
+</script>
+
+<script>
+  $(document).ready(function () {
+    
+    $('#username').blur(function(){
+      var tuserchk ='';
+      var username = $('#username').val();
+      var _token = $('input[name="_token"]').val();
+      $.ajax({
+        url:"../check/tuser",
+        method: "POST",
+        data:{username:username, _token:_token},
+        success:function(result){
+          if (result=='not_unique') {
+            $('#tuserchk').html('').css('color', 'rgb(13 202 240)');
+            $('#username').removeClass('has_error');
+          }else if (result=='unique') {
+            $('#tuserchk').html('Invalid Username!').css('color', '#ff4242');
+            $('#username').addClass('has_error');
+            $('#baltrns').attr('disabled', 'disabled');
+          }else if (result=='invalid'){
+            $('#tuserchk').html('').css('color', '#fff');
+            $('#username').addClass('has_error');
+            $('#baltrns').attr('disabled', 'disabled');
+          }
+        }
+      });
+    });
+  });
+
+</script>
+
+<script>
+$(document).ready(function() {
+  $("#busdt, #brate, #lratio").keyup(function(){
+    var buyamount =parseFloat($('#busdt').val());
+    var buyprice =$('#brate').val();
+    var lratio =$('#lratio').val();
+
+    if (buyamount > 0) {
+      if (buyamount < 101) {
+        $('#token').val(((buyamount*45/100)/buyprice).toFixed(2));
+        $('#btknam').text(buyamount*45/100);
+        $('#btknamr').text(45);
+        $('#blqdnam').text(buyamount*20/100);
+        $('#blqdnamr').text(20);
+      }else if (buyamount >= 101 && buyamount < 501) {
+        $('#token').val(((buyamount*50/100)/buyprice).toFixed(2));
+        $('#btknam').text(buyamount*50/100);
+        $('#btknamr').text(50);
+        $('#blqdnam').text(buyamount*15/100);
+        $('#blqdnamr').text(15);
+      }else if (buyamount >= 501 && buyamount < 5001) {
+        $('#token').val(((buyamount*55/100)/buyprice).toFixed(2));
+        $('#btknam').text(buyamount*55/100);
+        $('#btknamr').text(55);
+        $('#blqdnam').text(buyamount*10/100);
+        $('#blqdnamr').text(10);
+      }else if (buyamount >= 5001) {
+        $('#token').val(((buyamount*60/100)/buyprice).toFixed(2));
+        $('#btknam').text(buyamount*60/100);
+        $('#btknamr').text(60);
+        $('#blqdnam').text(buyamount*5/100);
+        $('#blqdnamr').text(5);
+      }
+      
+      $('#balpay').text((buyamount*(100-lratio)/100).toFixed(2));
+      $('#loanp').text((buyamount*lratio/100).toFixed(2));   
+      $('#bbinam').text(buyamount*18/100);
+      $('#bbinamr').text(18);
+      $('#baflam').text(buyamount*7/100);
+      $('#baflamr').text(7);
+      $('#rankam').text(buyamount*5/100);
+      $('#rankamr').text(5);
+      $('#badmam').text(buyamount*5/100);
+      $('#badmamr').text(5);
+    }else{
+      $('#balpay').text(0);
+      $('#loanp').text(0);
+      $('#token').val(0);
+      $('#btknam').text(0);
+      $('#btknamr').text(0);
+      $('#blqdnam').text(0);
+      $('#blqdnamr').text(0);
+      $('#bbinam').text(0);
+      $('#bbinamr').text(0);
+      $('#baflam').text(0);
+      $('#baflamr').text(0);
+      $('#rankam').text(0);
+      $('#rankamr').text(0);
+      $('#badmam').text(0);
+      $('#badmamr').text(0);
+    }
+  });
+})
+</script>
+
+<script>
+$(document).ready(function() {
+  $("#stoken, #srate").keyup(function(){
+    var sellamount =parseFloat($('#stoken').val());
+    var sellprice =$('#srate').val();
+    if (sellamount > 0) {
+      $('#tamnt').val(((sellamount*90/100)*sellprice).toFixed(2));
+      $('#stknam').text(sellamount*90/100);
+      $('#slqdnam').text(sellamount*10/100);
+    }else{
+      $('#tamnt').val(0);
+      $('#stknam').text(0);
+      $('#slqdnam').text(0);
+    }
+  });
+})
+</script>
+
+<script>
+$(document).ready(function() {
+  $("#wamount").keyup(function(){
+    var payamount =parseFloat($('#wamount').val());
+    if (payamount > 0) {
+      $('#getam').text((payamount-(payamount*1/100)).toFixed(2));
+      $('#wfee').text((payamount*1/100).toFixed(2));
+    }else{
+      $('#getam').text(0.00);
+      $('#wfee').text(0.00);
+    }
+  });
+})
+</script>
+
+
+<script>
+$(document).ready(function() {
+  $("#nqty").keyup(function(){
+    var qty =parseFloat($('#nqty').val());
+    if (qty > 0) {
+      $('#namnt').val(qty*101);
+    }else{
+      $('#namnt').val(0);
+    }
+  });
+})
+</script>	</body>
+
+</html>
